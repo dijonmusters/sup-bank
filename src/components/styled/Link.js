@@ -11,6 +11,11 @@ const Link = styled.a`
     text-decoration: inherit;
     font-weight: inherit;
   }
+
+  &:focus {
+    outline: 1px solid ${props => props.theme.highlight};
+    outline-offset: 4px;
+  }
 `
 
 export default Link

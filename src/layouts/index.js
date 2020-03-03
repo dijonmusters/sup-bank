@@ -18,6 +18,7 @@ const Container = styled.div`
 const Main = styled.main`
   flex: 1;
   padding: 2rem 0.25rem;
+  display: flex;
 
   @media ${({ theme }) => theme.isLargeScreen} {
     max-width: 768px;

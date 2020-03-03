@@ -11,6 +11,7 @@ const lightTheme = {
   background: '#FF7A64',
   text: '#242430',
   highlight: '#FFEF6B',
+  highlight2: '#FF8BB5',
   separator: '#242430',
 }
 
@@ -19,6 +20,7 @@ const darkTheme = {
   background: '#363537',
   text: '#FAFAFA',
   highlight: '#FFEF6B',
+  highlight2: '#FF8BB5',
   separator: '#EEE',
 }
 

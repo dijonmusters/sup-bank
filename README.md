@@ -38,6 +38,10 @@ Start development server
 npm start
 ```
 
+## Known Issues
+
+There are a few high severity npm audit vulnerabilities. If this were a production application I would remove the packages and rewrite any required functionality.
+
 ## Author
 
 **Jon Meyers** - [GitHub](https://github.com/dijonmusters)

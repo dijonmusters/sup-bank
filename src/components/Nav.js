@@ -31,11 +31,15 @@ const Nav = () => {
       </Title>
       <Items>
         <Item href="/" active={pathname === '/'}>
-          Me
+          Intro
         </Item>
         <Divider />
         <Item href="/why" active={pathname === '/why'}>
           Why
+        </Item>
+        <Divider />
+        <Item href="/contact" active={pathname === '/contact'}>
+          Contact
         </Item>
       </Items>
       <Switch />

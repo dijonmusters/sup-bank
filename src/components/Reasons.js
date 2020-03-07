@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import { getNewReason } from '../utils/reasons'
 import Button from '../components/styled/Button'
-import { Card, Title, ReasonPanel, Container } from './Reasons.style'
+import { Card, Title, ReasonPanel, Container, Message } from './Reasons.style'
 
 const REASON_BUTTON_QUERY = graphql`
   query ReasonButtonQuery {
@@ -54,7 +54,10 @@ const Reasons = () => {
 
   return (
     <Container>
-      <ReasonPanel>{reasons.map(renderReason)}</ReasonPanel>
+      <ReasonPanel>
+        <Message>Why should you contact me?</Message>
+        {reasons.map(renderReason)}
+      </ReasonPanel>
       <Button onClick={addReason(reasons, setReasons)}>
         <Img fixed={fixed} />
       </Button>

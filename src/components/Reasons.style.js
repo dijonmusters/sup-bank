@@ -31,3 +31,7 @@ export const Card = styled.div`
 export const Title = styled.h2`
   margin: 0.5rem 0;
 `
+
+export const Message = styled.h2`
+  font-weight: 600;
+`

@@ -13,7 +13,7 @@ const Index = ({
 }) => (
   <>
     <Helmet>
-      <title>Sup Bank - Me</title>
+      <title>Sup Bank - Introduction</title>
     </Helmet>
     <Page>
       <Introduction me={fixed} />

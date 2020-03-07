@@ -6,9 +6,9 @@ const randomNumber = (min, max) =>
   Math.floor(Math.random() * (max - min + 1) + min)
 
 const decorateReasonWithDisplayProperties = reason => {
-  const positionX = randomNumber(-100, 100)
-  const positionY = randomNumber(-100, 100)
-  const rotate = randomNumber(-40, 40)
+  const positionX = randomNumber(-80, 80)
+  const positionY = randomNumber(-80, 80)
+  const rotate = randomNumber(-30, 30)
   const color = colors[randomNumber(0, colors.length - 1)]
 
   return {
@@ -20,10 +20,11 @@ const decorateReasonWithDisplayProperties = reason => {
   }
 }
 
+const reasonExists = (reasons, reasonToFind) =>
+  reasons.find(reason => reason.title === reasonToFind.title)
+
 const getUniqueReason = reasons => {
-  const uniques = staticReasons.filter(
-    r => !reasons.find(exists => exists.title === r.title)
-  )
+  const uniques = staticReasons.filter(r => !reasonExists(reasons, r))
   const newReason =
     uniques.length > 0
       ? uniques[randomNumber(0, uniques.length - 1)]

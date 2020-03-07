@@ -13,7 +13,6 @@ export const ReasonPanel = styled.div`
   align-items: center;
   justify-content: center;
   z-index: -1;
-  overflow-x: hidden;
 `
 
 export const Card = styled.div`

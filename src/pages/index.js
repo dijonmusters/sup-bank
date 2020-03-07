@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import { Helmet } from 'react-helmet'
 import Introduction from '../components/Introduction'
 import Page from '../components/styled/Page'
 
@@ -10,9 +11,14 @@ const Index = ({
     },
   },
 }) => (
-  <Page>
-    <Introduction me={fixed} />
-  </Page>
+  <>
+    <Helmet>
+      <title>Sup Bank - Me</title>
+    </Helmet>
+    <Page>
+      <Introduction me={fixed} />
+    </Page>
+  </>
 )
 
 export const query = graphql`

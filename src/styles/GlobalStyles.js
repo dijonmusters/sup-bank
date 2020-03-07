@@ -11,9 +11,11 @@ const GlobalStyles = createGlobalStyle`
     font-size: 16px;
   }
 
-
   body {
     font-family: 'Open Sans', sans-serif;
+    background-color: ${props => props.theme.background};
+    color: ${props => props.theme.text};
+    letter-spacing: 0.03rem;
   }
 `
 

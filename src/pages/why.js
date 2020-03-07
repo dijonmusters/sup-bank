@@ -1,3 +1,11 @@
 import React from 'react'
+import Reasons from '../components/Reasons'
+import Page from '../components/styled/Page'
 
-export default () => <div>This is why you should hire me!</div>
+const Why = () => (
+  <Page>
+    <Reasons />
+  </Page>
+)
+
+export default Why

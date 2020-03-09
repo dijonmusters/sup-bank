@@ -11,7 +11,7 @@ import {
 const Introduction = ({ me }) => (
   <Container>
     <ImageContainer>
-      <Img fixed={me} />
+      <Img fixed={me} alt="Profile picture of Jon Meyers" />
     </ImageContainer>
     <ParagraphContainer>
       <Paragraph>

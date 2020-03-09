@@ -12,8 +12,8 @@ const DarkModeSwitcher = () => {
       <Icon isActive={!isDark} onClick={() => isDark && toggle()}>
         <Sun />
       </Icon>
-      <Toggle>
-        <Checkbox type="checkbox" onChange={toggle} />
+      <Toggle htmlFor="darkModeToggle">
+        <Checkbox id="darkModeToggle" type="checkbox" onChange={toggle} />
         <Dot isDarkMode={isDark} />
       </Toggle>
       <Icon isActive={isDark} onClick={() => !isDark && toggle()}>

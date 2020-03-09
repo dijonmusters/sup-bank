@@ -5,8 +5,9 @@ import Page from '../components/styled/Page'
 
 const Contact = () => (
   <>
-    <Helmet>
+    <Helmet htmlAttributes={{ lang: 'en' }}>
       <title>Sup Bank - Contact</title>
+      <meta name="description" content="Contact page to get in touch" />
     </Helmet>
     <Page>
       <ContactMe />

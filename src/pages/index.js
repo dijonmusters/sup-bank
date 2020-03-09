@@ -12,8 +12,9 @@ const Index = ({
   },
 }) => (
   <>
-    <Helmet>
+    <Helmet htmlAttributes={{ lang: 'en' }}>
       <title>Sup Bank - Introduction</title>
+      <meta name="description" content="Landing page to introduce Jon Meyers" />
     </Helmet>
     <Page>
       <Introduction me={fixed} />

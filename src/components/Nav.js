@@ -1,13 +1,17 @@
-import React from 'react'
-import { useStaticQuery } from 'gatsby'
+import React, { useContext } from 'react'
+import { ThemeContext } from 'styled-components'
+import { useStaticQuery, graphql } from 'gatsby'
 import { globalHistory } from '@reach/router'
 import Switch from './Switch'
 import Link from './styled/Link'
-import { Container, Title, Img, Items, Item, Divider } from './Nav.style'
+import { Container, Title, Img, Items, Item } from './Nav.style'
 
 const NAV_LOGO_QUERY = graphql`
   query NavLogoQuery {
-    file(relativePath: { regex: "/logo/" }) {
+    logoLight: file(relativePath: { regex: "/logo-light/" }) {
+      publicURL
+    }
+    logoDark: file(relativePath: { regex: "/logo-dark/" }) {
       publicURL
     }
   }
@@ -18,28 +22,32 @@ const Nav = () => {
     location: { pathname },
   } = globalHistory
 
+  const theme = useContext(ThemeContext)
+
   const {
-    file: { publicURL },
+    logoLight: { publicURL: logoLight },
+    logoDark: { publicURL: logoDark },
   } = useStaticQuery(NAV_LOGO_QUERY)
 
   return (
     <Container>
       <Title>
         <Link href="/">
-          <Img src={publicURL} />
+          <Img
+            src={theme.isDarkMode ? logoDark : logoLight}
+            alt="Sup Bank logo"
+          />
         </Link>
       </Title>
       <Items>
-        <Item href="/" active={pathname === '/'}>
-          Intro
+        <Item active={pathname === '/'}>
+          <Link href="/">Intro</Link>
         </Item>
-        <Divider />
-        <Item href="/why" active={pathname === '/why'}>
-          Why
+        <Item active={pathname === '/why'}>
+          <Link href="/why">Why</Link>
         </Item>
-        <Divider />
-        <Item href="/contact" active={pathname === '/contact'}>
-          Contact
+        <Item active={pathname === '/contact'}>
+          <Link href="/contact">Contact</Link>
         </Item>
       </Items>
       <Switch />

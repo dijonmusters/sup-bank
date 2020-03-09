@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Link from './styled/Link'
 
 export const Container = styled.nav`
   padding: 1rem;
@@ -35,7 +34,9 @@ export const Items = styled.ul`
   }
 `
 
-export const Item = styled(Link)`
+export const Item = styled.li`
+  position: relative;
+  list-style: none;
   margin-left: 1rem;
   margin-right: 1rem;
   font-size: 1.5rem;
@@ -52,6 +53,19 @@ export const Item = styled(Link)`
 
   &:last-child {
     margin-right: 0;
+    &:after {
+      display: none;
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    border-left: 1px solid ${props => props.theme.separator};
+    height: 1rem;
+    right: -1rem;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
   }
 `
 

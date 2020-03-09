@@ -9,7 +9,7 @@ const ContactMe = () => (
     <ContactPanel heading="Get in touch" contacts={contacts} />
     <Divider />
     <ContactPanel
-      heading="Need a little more convincing..."
+      heading="Need more convincing?"
       contacts={furtherConvincing}
     />
   </Container>

@@ -14,7 +14,7 @@ const Button = styled.button`
 
   &:focus {
     outline: 1px solid ${props => props.theme.highlight};
-    outline-offset: 4px;
+    outline-offset: -1px;
   }
 `
 

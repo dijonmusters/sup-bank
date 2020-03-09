@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import { default as StyledButton } from '../components/styled/Button'
 
 export const Container = styled.div`
   flex: 1;
@@ -34,4 +35,9 @@ export const Title = styled.h2`
 
 export const Message = styled.h2`
   font-weight: 600;
+`
+
+export const Button = styled(StyledButton)`
+  width: fit-content;
+  margin: 0 auto;
 `

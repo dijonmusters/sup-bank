@@ -13,6 +13,7 @@ const lightTheme = {
   highlight: '#FFEF6B',
   highlight2: '#FF8BB5',
   separator: '#242430',
+  isLightMode: true,
 }
 
 const darkTheme = {
@@ -22,6 +23,7 @@ const darkTheme = {
   highlight: '#FFEF6B',
   highlight2: '#FF8BB5',
   separator: '#EEE',
+  isDarkMode: true,
 }
 
 export { lightTheme, darkTheme }

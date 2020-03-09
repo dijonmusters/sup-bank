@@ -2,7 +2,7 @@ import React from 'react'
 import { Contact, Panel, Row, Title, Heading } from './ContactPanel.style'
 
 const renderContact = ({ title, url, icon }) => (
-  <Contact href={url}>
+  <Contact key={title} href={url}>
     {icon}
     {title && <Title>{title}</Title>}
   </Contact>

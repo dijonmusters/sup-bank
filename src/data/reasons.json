@@ -1,14 +1,30 @@
 [
   {
-    "title": "4.00 GPA and First Class Honours",
+    "title": "4.00 GPA and first class honours!",
     "description": "University degrees aren't everything but this shows dedication!"
   },
   {
-    "title": "I built this website",
+    "title": "I built this website!",
     "description": "How many candidates go to this much effort to show their enthusiasm?"
   },
   {
-    "title": "3 years dev experience",
-    "description": "I have developed amazing context and experience working across different organisations"
+    "title": "Passionate about teaching and mentoring!",
+    "description": "From teaching software development to mentoring at REA, writing blog posts to developing free online courses, I love sharing knowledge and helping people to learn new things!"
+  },
+  {
+    "title": "Love to learn!",
+    "description": "I always try to work something unfamiliar into every project I work on. This keeps things fresh and interesting, while helping me keep up with the ever changing web development landscape."
+  },
+  {
+    "title": "Great at making mistakes ... and learning from them!",
+    "description": "Trying new things, taking risks and revisiting the process based on their success or failure is the way I like to work!"
+  },
+  {
+    "title": "Believe in building in the open and making the world accessible!",
+    "description": "The web should be open and accessible to everyone! I try to keep this front of mind anytime I am developing software!"
+  },
+  {
+    "title": "Love Mario Kart!",
+    "description": "3 star trophy in all four CCs on Mario Kart 8 (Wii U). Slowly working my way back up on Switch."
   }
 ]

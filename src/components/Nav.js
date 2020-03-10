@@ -43,10 +43,10 @@ const Nav = () => {
         <Item active={pathname === '/'}>
           <Link href="/">Intro</Link>
         </Item>
-        <Item active={pathname === '/why'}>
+        <Item active={pathname.includes('/why')}>
           <Link href="/why">Why</Link>
         </Item>
-        <Item active={pathname === '/contact'}>
+        <Item active={pathname.includes('/contact')}>
           <Link href="/contact">Contact</Link>
         </Item>
       </Items>

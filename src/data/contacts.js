@@ -1,7 +1,12 @@
 import React from 'react'
-import { Phone, Mail, Linkedin, GitHub, Smartphone } from 'react-feather'
+import { Phone, Mail, Linkedin, GitHub, Smartphone, Book } from 'react-feather'
 
 export const furtherConvincing = [
+  {
+    title: 'Blog',
+    url: 'https://www.monoglot.dev/',
+    icon: <Book size="3rem" />,
+  },
   {
     title: 'GitHub',
     url: 'https://www.github.com/dijonmusters',

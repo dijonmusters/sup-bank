@@ -11,7 +11,7 @@ const Layout = ({ children }) => (
     <ThemeProvider>
       <Normalize />
       <GlobalStyles />
-      <Container>
+      <Container style={{ minHeight: '100rvh' }}>
         <Nav />
         <Main>{children}</Main>
       </Container>

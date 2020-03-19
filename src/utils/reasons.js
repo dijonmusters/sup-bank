@@ -6,7 +6,7 @@ const randomNumber = (min, max) =>
   Math.floor(Math.random() * (max - min + 1) + min)
 
 const decorateReasonWithDisplayProperties = reason => {
-  const positionX = randomNumber(-80, 80)
+  const positionX = randomNumber(-30, 30)
   const positionY = randomNumber(-80, 80)
   const rotate = randomNumber(-30, 30)
   const color = colors[randomNumber(0, colors.length - 1)]

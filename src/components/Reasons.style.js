@@ -17,15 +17,23 @@ export const ReasonPanel = styled.div`
 `
 
 export const Card = styled.div`
-  ${({ positionX, positionY, rotate, color }) => css`
+  ${({ positionX, positionY, rotate, color, theme }) => css`
     position: absolute;
     background: ${color.background};
-    padding: 2rem;
+    padding: 1rem 2rem;
+    font-size: 0.75rem;
     text-align: center;
     transform: translate3d(${positionX}px, ${positionY}px, 0)
       rotate(${rotate}deg);
     width: 80%;
     color: ${color.text};
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    @media ${theme.isLargeScreen} {
+      padding: 2rem;
+      font-size: 1rem;
+    }
   `}
 `
 

@@ -16,6 +16,7 @@ const DarkModeProvider = ({ children }) => {
 
   useEffect(() => {
     const localTheme = localStorage.getItem('theme')
+    const defaultTheme = 'light'
 
     if (localTheme) {
       setTheme(localTheme)
@@ -25,7 +26,7 @@ const DarkModeProvider = ({ children }) => {
     ) {
       setMode('dark')
     } else {
-      setMode('light')
+      setMode(defaultTheme)
     }
   }, [])
 

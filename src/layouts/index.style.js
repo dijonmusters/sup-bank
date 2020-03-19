@@ -1,13 +1,14 @@
 import styled from 'styled-components'
+import Div100vh from 'react-div-100vh'
 
-export const Container = styled.div`
+export const Container = styled(Div100vh)`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  overflow: hidden;
 `
 
 export const Main = styled.main`
   flex: 1;
   display: flex;
-  width: 100%;
+  width: 100vw;
 `

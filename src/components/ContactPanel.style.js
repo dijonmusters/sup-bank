@@ -3,6 +3,7 @@ import Link from './styled/Link'
 
 export const Panel = styled.div`
   flex: 1;
+  padding: 0 0.5rem;
 `
 
 export const Row = styled.div`

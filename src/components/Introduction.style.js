@@ -16,7 +16,8 @@ export const ImageContainer = styled.div`
   flex: 1;
   display: flex;
   justify-content: center;
-  max-width: 100vw;
+  align-items: center;
+  overflow: hidden;
 `
 
 export const ParagraphContainer = styled.div`

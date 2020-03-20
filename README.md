@@ -40,7 +40,8 @@ npm start
 
 ## Known Issues
 
-There are a few high severity npm audit vulnerabilities. If this were a production application I would remove the packages and rewrite any required functionality.
+- There are a few `high severity` npm audit vulnerabilities. If this were a production application I would remove the packages and rewrite any required functionality.
+- There is also a weird bug in the Nav bar - only on light mode and production version - where the active link is always the root `/`. I have confirmed that the correct prop is making it through to the `Item` Styled Component so this would require some further investigation to solve.
 
 ## Author
 

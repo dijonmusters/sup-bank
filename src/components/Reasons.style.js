@@ -33,6 +33,7 @@ export const Card = styled.div`
     @media ${theme.isLargeScreen} {
       padding: 2rem;
       font-size: 1rem;
+      width: 100%;
     }
   `}
 `

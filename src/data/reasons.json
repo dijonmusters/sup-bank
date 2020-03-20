@@ -4,7 +4,7 @@
     "description": "University degrees aren't everything but this shows dedication!"
   },
   {
-    "title": "I built this website!",
+    "title": "I built this webapp!",
     "description": "How many candidates go to this much effort to show their enthusiasm?"
   },
   {
@@ -13,22 +13,22 @@
   },
   {
     "title": "Love to learn!",
-    "description": "I always try to work something unfamiliar into every project I work on. This keeps things fresh and interesting, while helping me keep up with the ever changing web development landscape."
+    "description": "I always try to include something unfamiliar in every project I work on. In this project I experimented with dark mode (switch in top right), randomised css properties (why page) and dynamically changing gif-based logos."
   },
   {
-    "title": "Great at making mistakes ... and learning from them!",
-    "description": "Trying new things, taking risks and revisiting the process based on their success or failure is the way I like to work!"
-  },
-  {
-    "title": "Believe in building in the open and making the world accessible!",
-    "description": "The web should be open and accessible to everyone! I try to keep this front of mind anytime I am developing software!"
+    "title": "Enjoy challenging things that are \"impossible\"!",
+    "description": "I once swam out into a freezing lake to demonstrate this to one of my high school teachers (maybe more on that later). Up Bank's entire existence is challenging what's possible! Let me help you challenge!"
   },
   {
     "title": "Love Mario Kart!",
     "description": "3 star trophy in all four CCs on Mario Kart 8 (Wii U). Slowly working my way back up on Switch."
   },
   {
+    "title": "Five years web dev experience",
+    "description": "The last three of which have been primarily React. I ♥️ React (...and React Native)"
+  },
+  {
     "title": "Time management!",
-    "description": "Nothing makes you manage your time more effectively than having very little of it! Having a nine month old daughter has really helped me hone my time management and prioritisation skills!"
+    "description": "Nothing makes you manage your time more effectively than having very little of it! With a nine month old daughter I have honed my time management and prioritisation skills! An example of this is that frustrating Navbar bug described in the README!"
   }
 ]
